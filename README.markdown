@@ -10,8 +10,11 @@ A big part of the motivation for this project was to ensure that csv_streamer wo
 Unicorn was originally derived from Mongrel, but has recently eclipsed it in popularity because of its process management design. While mongrel on heroku is probably possible, Unicorn on Heroku is far more common. I relied heavily on [this wonderful unicorn on heroku howto from Michael van Rooijen's blog](http://michaelvanrooijen.com/articles/2011/06/01-more-concurrency-on-a-single-heroku-dyno-with-the-new-celadon-cedar-stack/) in my configuration of this project. This test project includes the config/unicorn.rb and Procfile Michael describes in his blog, so to publish this application to heroku, you simply need to use the _Cedar_ application stack. The relevant git and heroku commands, again from Michael, are:
 
 > git init
+
 > git add . && git commit -m "concurrecy"
+
 > heroku create --stack cedar
+
 > git push heroku master
 
 # Enjoy!
